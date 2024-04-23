@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+        function Login(){
+            
+            var frm = document.loginfrm;
+
+            // 다음 페이지로 모든 parameter 전달 
+            frm.action = "loginnext.html"
+
+            // url 뒤에 255 붙어서 값이 넘어간다
+            frm.method = "get";
+
+            // 다음 페이지로 이동
+            frm.submit();
+        }
+
+    </script>
+
+</head>
+<body>
+    <form name="loginfrm">
+
+        id <input type="text" name="id" id="">
+        password <input type="password" name="passwd" id="">
+        <input type="button" value="login" onclick="Login()">
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+        function Login(){
+            // document : 모든 문서 , window : 모든 창
+            
+            // 모든 객체지향은 큰 곳에서 작은 곳으로 간다
+            // 대한민국.서울.송파구.가락시장역.개발센터.304호
+
+            // input 사용하려면 > loginfrm안에 있기때문에 접근하기위해
+            var frm = document.loginfrm;
+            
+            // window 생략 가능
+            window.alert('로그인 준비중');
+            
+            // value(값) : 로그인 값
+            alert(frm.id.value)
+            alert(frm.passwd.value)
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <!-- form 안에 name 있어야 다음 페이지 값이 넘어간다 -->
+    <form name="loginfrm">
+
+        id <input type="text" name="id" id="">
+        password <input type="password" name="passwd" id="">
+        <!-- onclick : 마우스로 누르면 클릭 -->
+        <input type="button" value="login" onclick="Login()">
+    </form>
+    
+</body>
+</html>
