@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <script>
+        function Dauminputlogin(){
+            var frm = document.dauminputlogin;
+            frm.method = "get";
+            frm.action = "../0417/dauminputloginnext.html";
+            frm.submit();
+        }
+    </script>
+</head>
+<body>
+    <form name="dauminputlogin">
+    <table border="1" width="300" height="50">
+        <tr>
+            <td>아이디</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>비밀번호</td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+    <table border="1" width="300" height="50">
+        <tr>
+            <td align="center"><input type="button" onclick="Dauminputlogin()" value="가입하기"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

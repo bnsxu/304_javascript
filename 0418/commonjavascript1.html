@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson1</title>
+    <!-- <script src="../0418/js/lesson1.js"></script> -->
+</head>
+<body>
+    <script>
+
+        // 변수 : 오른쪽 문자열이 왼쪽 name 변수에 저장된다
+        // var : 모든 타입을 가질 수 있다 / 변수는 변할 수 있다
+        var name='아무개';
+
+        // 문자열 타입(형)
+        name='가나다'; 
+
+        // 나이, 주소
+        // 정수는 '' 안감싸도 된다
+        var age=22;
+        age = age+1;
+
+        age = 11;
+
+        // log는 남지 않기때문에 var(변수)가 필요하다
+        console.log('말하다');
+        console.log(name); // '아무개' name이 log에 표시됨
+        console.log(age);
+
+
+        var init = 0;
+
+        // ++변수 : 변수 실행 전 +1
+        ++init;
+        console.log(init);
+        ++init;
+        console.log(init);
+        ++init;
+        console.log(init);
+
+        // 변수 ++; 변수 실행 후 +1
+        init++;
+
+        console.log(init);
+
+        // test 1
+
+        init = 0;
+
+        console.log(init++); // 0
+        console.log(init++); // 1
+        console.log(init);      // 2
+        console.log(init++); // 2
+        console.log(init++); // 3
+        console.log(++init); // 5
+        console.log(init);      // 5
+
+        // test 2
+
+        var init = 0;
+
+        console.log(init++); // 0
+        console.log(init++); // 1
+        console.log(++init); // 3
+        console.log(init);      // 3
+        console.log(init++); // 3
+        console.log(init++); // 4
+        console.log(++init); // 6
+        console.log(init);      // 6
+    </script>
+
+    <!-- <input type="button" value="click" onclick="Lesson1()"> -->
+
+</body>
+</html>

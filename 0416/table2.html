@@ -1,0 +1,56 @@
+<!-- colspan, rowspan -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" width="400" height="200">
+        <!-- html은 넓이, 높이가 맞지않아서 width, height 자동입력이 안된다 -->
+        <tr>
+            <td width="130" colspan="2">1</td>
+            <!-- <td>2</td> -->
+            <td width="130">3</td>
+        </tr>
+        <tr>
+            <td width="130">4</td>
+            <td width="130" colspan="2">5</td>
+            <!-- <td>6</td> -->
+        </tr>
+        <tr>
+            <td width="130" cSolspan="3">7</td>
+            <!-- <td>8</td>
+            <td>9</td> -->
+        </tr>
+    </table>
+    
+    <br>
+
+    <!-- 4행 3열, 1열 2+3열 -->
+    <table border="1" width="400" height="200">
+        <tr>
+            <td>이름</td>
+            <td colspan="2">아무개</td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <td>나이</td>
+            <td colspan="2">22</td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <td>주소</td>
+            <td colspan="2">성동구</td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <td>이메일</td>
+            <td colspan="2">123@naver.com</td>
+            <!-- <td></td> -->
+        </tr>
+    </table>
+    </body>
+    </html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function CoupangInputlogin() {
+            var frm = document.cpfrm;
+            console.log('아이디 :' + frm.id.value);
+            console.log('비밀번호 :' + frm.passwd.value);
+            console.log('비밀번호 확인 :' + frm.passwd2.value);
+            console.log('이름 :' + frm.name.value);
+            console.log('휴대폰 번호 :' + frm.phone.value);
+
+            alert(frm.id.value + " " + frm.passwd.value + " " + frm.passwd2.value
+                + " " + frm.name.value + " " + frm.phone.value);
+        }
+    </script>
+</head>
+<body>
+    <form name="cpfrm">
+
+        아이디 <input type="text" name="id" id=""><br>
+        비밀번호 <input type="text" name="passwd" id=""><br>
+        비밀번호 확인 <input type="text" name="passwd2" id=""><br>
+        이름 <input type="text" name="name" id=""><br>
+        휴대폰 번호 <input type="text" name="phone" id=""><br>
+
+        <input type="button" value="확인" onclick="CoupangInputlogin()">
+        
+    </form>
+</body>
+</html>

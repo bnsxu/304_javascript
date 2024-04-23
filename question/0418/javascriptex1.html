@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+/* javascript function Address(){}
+    이름, 핸드폰, 이메일 console.log window.alert */
+
+        function Address() {
+            var frm = document.exfrm;
+            console.log('이름 :' + frm.name.value);
+            console.log('핸드폰 :' + frm.phone.value);
+            console.log('메일 :' + frm.mail.value);
+            window.alert(frm.name.value + " " + frm.phone.value + " " + frm.mail.value);
+        }
+    </script>
+    </head>
+    <body>
+        <form name="exfrm">
+            이름 <input type="text" name="name" id=""><br>
+            핸드폰<input type="text" name="phone" id=""><br>
+            이메일<input type="text" name="mail" id=""><br>
+            <input type="button" value="확인" onclick="Address()">
+        </form>
+    </body>
+    </html>

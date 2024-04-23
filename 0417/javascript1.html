@@ -1,0 +1,89 @@
+<!-- javascript
+document : 문서(모든 문서의 부모)
+window : 창(모든 창의 부모) -->
+
+<!-- 
+큰곳에서 작은곳으로 간다 : 객체지향프로그래밍
+
+Object : 지구
+지구.대한민국.서울시.송파구.가락동.송파개발센터.3.304
+지구.미국
+지구.하와이
+
+Object : 서울시(해당하는 지역) > 상속
+서울시.송파구.가락동.송파개발센터
+송파개발센터 1층
+송파개발센터 2층
+송파개발센터 3층
+송파개발센터 4층
+송파개발센터 5층
+
+spring, egov, servlet,jsp(mvc : model, view, controller)
+-->
+
+<!-- document type : 문서 타입의 html 형식 선언 -->
+<!-- 웹으로 출력 : html  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- ctrl+h : 전체 검색, 전체 바꾸기 / crtl+shift+o : 파일 검색 -->
+
+<!--
+function : 함수(method)
+()안에 있는것은 무조건 동사(움직임)이다
+
+변수(variable) : 하나의 값만 갖는다 var name='값'
+
+augment : 무한/기본으로 사용가능
+function 메소드이름(augment1,augment2,augment3..)
+-->
+
+<!-- javascript, es6, jquery, react, vue, node.js -->
+<script>
+     function Login() {
+        // var : Object 모든 타입을 다 가질 수 있다(포함한다)
+        // 변수 : 오른쪽에서 왼쪽으로 값을 대입한다 (모든 객체지향언어)
+        var frm = document.loginfrm; //form 이름이 frm 변수에 대입
+        
+        frm.action="../form/loginnext.html";
+        
+        // url에 parameter 값이 붙어서 넘어간다 (255 넘으면 안됨)
+        frm.method="get";
+        // 내부적으로 parameter 값이 넘어간다(url 값이 안보인다)
+        // frm.method="post";
+
+        frm.submit();
+     }
+
+
+</script>
+
+
+<!-- head : 설정 (link, meta, javascript, css etc..) -->
+</head>
+
+<body>
+    <!-- form : body 안에 있어야한다 -->
+    <!-- form안에 parameter 값이 있어야 다음 페이지로 넘어간다 -->
+    <form name="loginfrm">
+    
+        <!-- input:text -->
+        <!-- name > parameter name : userid -->
+        id <input type="text" name="userid">
+        
+        <!-- input:password / 별표로 출력 -->
+        <!-- name > parameter name : passwd -->
+        password <input type="password" name="passwd">
+
+        <!-- input:button -->
+        <!-- 이벤트 처리 (버튼을 누르면 어떤 액션이 있다) -->
+        <!-- 사용자 = 왜 안되지? / 개발자 = 왜 안될까? -->
+        <input type="button" value="login" onclick="Login()">
+
+    </form>
+</body>
+</html>

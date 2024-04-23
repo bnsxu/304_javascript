@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // 함수 : 메소드(method)
+        function Init(){
+            // window(모든창의 부모).alert(알림)
+            window.alert('환영합니다'); // '홀따옴표(싱글쿼터)' / "쌍따옴표(더블쿼터)"
+        }
+
+        // 함수 이름은 Init2 알림창은 이름 나이 주소 출력
+        function Init2(){
+            window.alert("이름 나이 주소");
+        }
+    </script>
+</head>
+<body>
+     <form action="">
+        
+        <!-- 해당하는 함수 바로가기 1) F3 / 2) ctrl 누르고 함수 클릭
+        이전 변수로 가기 alt+좌,우 방향키 -->
+        <input type="button" value="click" onclick="Init()">
+        <input type="button" value="click2" onclick="Init2()">
+     </form>
+</body>
+</html>

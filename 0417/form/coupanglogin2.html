@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- script 선언 (클라이언트 언어) 
+    node.js vue.js(node.js), react.js(node.js)
+    -->
+    <script>
+        function Coupanglogin2() {
+            var frm = document.coupanglogin2;
+            frm.method = "get";
+            frm.action = "/0417/form/coupangnext.html";
+            frm.submit();
+        }
+    </script>
+</head>
+<body>
+    <form name="coupanglogin2">
+        <table border="1" width="300" height="50">
+            <tr>
+                <td>아이디</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        <table style="margin-top: 10px;" border="1" width="300" height="50">
+            <tr>
+                <td align="center"><input type="button" onclick="Coupanglogin2()" value="회원가입"></td>
+            </tr>
+        </table>
+        <table style="margin-top: 10px;" border="1" width="300" height="50">
+            <tr>
+                <td align="center"><input type="button" onclick="Coupanglogin2()" value="로그인"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

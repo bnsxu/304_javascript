@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- formnext.html 생성 후
+    form action에 "formnext.html" 설정해주면 그 페이지로 이동한다 -->
+    <form action="formnext.html">
+
+        <!-- 아이디/패스워드 버튼 -->
+        <!-- table>tr*3>td*3>input:t -->
+
+        <table border="1" width="300" height="100">
+            <tr>
+                <td>아이디</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>패스워드</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <!-- align : center left right -->
+                <!-- button : 이벤트 처리를 해줘야한다 -->
+                <!-- submit : 다음 페이지로 이동 / form action에 다음 페이지 설정하기 -->
+                <td colspan="2" align="center"><input type="submit" value="로그인"></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
